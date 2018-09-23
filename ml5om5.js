@@ -7,7 +7,7 @@ const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const prefix = 'A';
+const prefix = 'a';
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
 });
@@ -289,7 +289,7 @@ client.on('message', function(message) {
 
 client.on('message', async message => {
             if(!message.channel.guild) return;
-             if (message.content.startsWith("A")) {
+             if (message.content.startsWith("a")) {
 let args = message.content.split(' ').slice(1).join(' ');
             let sigMessage = await args;
             
